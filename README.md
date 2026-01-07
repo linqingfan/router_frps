@@ -13,6 +13,7 @@ change the ini file to just the following line of code:
 ```
 bindPort = 80
 ```
+Before that, make sure the router web interface is change to other port such as port 8080
 
 cp the frps executable and ini file to /usr/bin
 ```
