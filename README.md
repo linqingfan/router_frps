@@ -50,3 +50,9 @@ service start frps
 
 # Open ports
 Depending on your router, open the ports 80, 998 and 999
+
+# Creating a dynamic domain name for router
+Create an account in https://freedns.afraid.org/
+Create your domain name for your router e.g. wjrouter.mooo.com
+
+After that setup auto updating of IP address of your router through openwrt dynu auto update
