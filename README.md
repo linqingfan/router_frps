@@ -1,6 +1,24 @@
 # router_frps
 setting up frps on router
 
+# Change router port 80
+The web interface to router is using port 80. We need to change port 80 to port 8080
+```
+vi /etc/config/uhttpd
+```
+change
+```
+list listen_http 0.0.0.0:80
+```
+to
+```
+list listen_http 0.0.0.0:8080
+```
+reboot router and check if the website is working:
+```
+http://192.168.0.1:8080
+```
+
 # Download ARM64 binaries
 ```
 wget https://github.com/fatedier/frp/releases/download/v0.64.0/frp_0.64.0_linux_arm64.tar.gz
@@ -50,10 +68,11 @@ service start frps
 ```
 
 # Open ports
-Depending on your router, open the ports 80, 998 and 999
+Depending on your router, open the ports 80, 998 and 999.
+Make sure WAN side can access to the port (this router device). Common mistake is to allow LAN side to access the port only
 
 # Creating a dynamic domain name for router
 Create an account in https://freedns.afraid.org/
 Create your domain name for your router e.g. wjrouter.mooo.com
-
-After that setup auto updating of IP address of your router through openwrt dynu auto update
+Check your public ip address of your router (e.g.  112.199.254.252) and manually update the IP address of e.g. wjrouter.mooo.com
+If everything is fine with FRPS, last step is to install Dynamic DNS software in openwrt to dynamic update the domain
