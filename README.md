@@ -83,6 +83,7 @@ This is detailed instruction to open the ports:
 + Destination Zone: Device (Input)
 + Destination port: 80, 998 or 999
 + Leave the rest as default
++ Add other ports
 + Save and Apply
 
 # Creating a domain name for router
