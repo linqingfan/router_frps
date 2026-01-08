@@ -1,6 +1,11 @@
 # router_frps
 setting up frps on router
 
+# Install openwrt
+Follow openwrt official site to install openwrt in the router
+SSH should be enabled by default and you have to ssh using root username
+Change the root password
+
 # Change router port 80
 The web interface to router is using port 80. We need to change port 80 to port 8080
 ```
