@@ -7,7 +7,7 @@ setting up frps on router
 + Change the root password for security reason
 
 # Change router port 80
-The web interface to router is using port 80. We need to change port 80 to port 8080
+We want to use port 80 for frps to "pretend" that the traffice is browsing website. The web server in openwrt router by default is using port 80. So we need to change port 80 to port 8080
 ```
 vi /etc/config/uhttpd
 ```
