@@ -73,9 +73,9 @@ service start frps
 ```
 
 # Open ports
-Depending on your router, open the ports 80, 998 and 999.
+In openwrt, open the ports 80, 998 and 999.
 Make sure WAN side can access to the port (this router device). Common mistake is to allow LAN side to access the port only
-To open the port:
+This is detailed instruction to open the ports:
 + under Network->Firewall
 + Click Add
 + Give the port a name e.g. frps for port 80
