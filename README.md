@@ -21,7 +21,7 @@ list listen_http 0.0.0.0:8080
 ```
 reboot router and check if the website is working:
 ```
-http://192.168.0.1:8080
+http://192.168.1.1:8080
 ```
 
 # Download ARM64 binaries
