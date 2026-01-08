@@ -92,7 +92,7 @@ Check your public ip address of your router (e.g.  112.199.254.252) and manually
 
 # Dynamic DNS update
 If everything is fine with FRPS, last step is to install Dynamic DNS software in openwrt to dynamic update the domain IP.
-Home router IP address may change after sometime. You can install luci-app-ddns package in openwrt to automatically update IP address in freedns when router public IP changes.
+Home router IP address may change after sometime. You can install ddns-scripts-service or luci-app-ddns package in openwrt to automatically update IP address in freedns when router public IP changes.
 To access to dynamic DNS:
 + Services-> Dynamic DNS
 + In basic settings:
@@ -101,7 +101,7 @@ To access to dynamic DNS:
 + DDNS Service provider: custom
 + Custom update-URL: https://freedns.afraid.org/dynamic/update.php?xxxxxxxxxxx
 + Domain: sync.afraid.org
-+ Username: guess
++ Username: xxxx
 + password:xxxx
 
 Note that you need to get the correct xxxx info for Custom update-URL and password from https://freedns.afraid.org/
