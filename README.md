@@ -76,3 +76,9 @@ Create an account in https://freedns.afraid.org/
 Create your domain name for your router e.g. wjrouter.mooo.com
 Check your public ip address of your router (e.g.  112.199.254.252) and manually update the IP address of e.g. wjrouter.mooo.com
 If everything is fine with FRPS, last step is to install Dynamic DNS software in openwrt to dynamic update the domain
+
+# Points to note
+Some important points:
++ After changing the domain IP address, it takes some time to propagate to the internet. Always ping the domain name to check if the ip is correct e.g. ping wjrouter.mooo.com
++ After the domain name IP has been verified, REBOOT the frpc machine i.e. the server
+
