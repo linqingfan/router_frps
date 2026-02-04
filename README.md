@@ -112,3 +112,7 @@ Some important points:
 + After changing the domain IP address, it takes some time to propagate to the internet. Always ping the domain name to check if the ip is correct e.g. ping wjrouter.mooo.com
 + After the domain name IP has been verified, REBOOT the frpc machine i.e. the server
 
+# Dynamic IP Propagation
+When IP is updated in afraid.org, the IP may take sometime to propagate. To speed up the propagation, visit https://developers.google.com/speed/public-dns/cache and key rpoly.mooo.com and flush cache may speed up the propagation
+
+
